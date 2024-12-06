@@ -1,27 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cookie Clicker Grid</title>
+    <title>Welcome to your worst nightmare</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
+
 <body>
+    <div id="stress-timer">5:00</div>
     <div class="grid-container">
         <div class="grid-item" id="module1">
-            <button id="click-me">Click me</button>
+            <button id="click-me">Hold me</button>
         </div>
-        <div class="grid-item" id="module2">Module 2</div>
-        <div class="grid-item" id="module3">Module 3</div>
-        <div class="grid-item" id="module4">Module 4</div>
+        <div class="grid-item" id="module2">
+            <div id="problem-display"></div>
+            <input type="range" id="answer-slider" min="0" max="1000000" value="500000">
+            <div id="slider-value">500000</div>
+            <button id="submit-answer">Submit</button>
+        </div>
+        <div class="grid-item" id="module3">
+            <div id="wordle-display"></div>
+            <input type="text" id="wordle-input" maxlength="5" placeholder="Enter 5-letter word">
+            <button id="wordle-submit">Submit</button>
+        </div>
+        <div class="grid-item" id="module4">
+            <div class="canvas-container">
+                <canvas id="content-canvas"></canvas>
+                <canvas id="scratchcard"></canvas>
+            </div>
+        </div>
         <div class="grid-item" id="counter">
             <div id="counter-label">Cookies</div>
             <div id="counter-value">0</div>
         </div>
         <div class="grid-item" id="module5">Module 5</div>
-        <div class="grid-item" id="module6">Module 6</div>
-        <div class="grid-item" id="module7">Module 7</div>
-        <div class="grid-item" id="module8">Module 8</div>
+        <div class="grid-item" id="module6-8" style="grid-column: span 3;">
+            <div class="combined-container">
+                <p>This space was meant to be filled with more absurd ideas (having to draw a perfect circle, a clock with
+                    moveable hands, ...) but at like 02:00 I've gone crazy...
+                    <br>Anyway, Thanks for testing this... thing ? And remember, fab is always here
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="floating-popup">
+        <div class="popup-content">
+            <span id="popup-text"></span>
+            <button class="popup-close">✕</button>
+        </div>
     </div>
     <script src="main.js"></script>
 </body>
