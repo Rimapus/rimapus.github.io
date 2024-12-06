@@ -27,7 +27,7 @@ function createPhoneButton() {
 setInterval(createPhoneButton, 1500);
 
 document.getElementById('prev-page-btn').addEventListener('click', () => {
-    window.location.href = 'name.html';
+    window.location.href = 'index.html';
   });
 
 document.getElementById('next-page-btn').addEventListener('click', () => {
