@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enregistrement du Nom & Prénom</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/name.css">
+</head>
+<body>
+  <div class="main-container">
+    <h1>Enregistrement du Nom & Prénom</h1>
+    <div class="intro-text">
+      <p>Première étape pour créer un compte : entrez votre nom et prénom en utilisant la barre d'espace pour entrer les symboles. Sélectionnez d'abord le champ dans lequel vous souhaitez saisir une information en cliquant sur le bouton associé. Appuyez moins d'une seconde pour un point (.) et plus d'une seconde pour un tiret (_). Appuyez sur "Entrée" pour soumettre la lettre. Répétez l'opération pour chaque lettre supplémentaire.</p>
+    </div>
+    <div class="content-container">
+      <div class="table-container">
+        <div class="table-section">
+          <h2>Alphabet et Caractères</h2>
+          <table class="table-separation">
+            <thead>
+              <tr>
+                <th>SYMBOLE</th>
+                <th>MORSE</th>
+                <th>SYMBOLE</th>
+                <th>MORSE</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>A</td><td>. _</td><td>B</td><td>_ . . .</td></tr>
+              <tr><td>C</td><td>_ . _ .</td><td>D</td><td>_ . .</td></tr>
+              <tr><td>E</td><td>.</td><td>F</td><td>. . _ .</td></tr>
+              <tr><td>G</td><td>_ _ .</td><td>H</td><td>. . . .</td></tr>
+              <tr><td>I</td><td>. .</td><td>J</td><td>. _ _ _</td></tr>
+              <tr><td>K</td><td>_ . _</td><td>L</td><td>. _ . .</td></tr>
+              <tr><td>M</td><td>_ _</td><td>N</td><td>_ .</td></tr>
+              <tr><td>O</td><td>_ _ _</td><td>P</td><td>. _ _ .</td></tr>
+              <tr><td>Q</td><td>_ _ . _</td><td>R</td><td>. _ .</td></tr>
+              <tr><td>S</td><td>. . .</td><td>T</td><td>_</td></tr>
+              <tr><td>U</td><td>. . _</td><td>V</td><td>. . . _</td></tr>
+              <tr><td>W</td><td>. _ _</td><td>X</td><td>_ . . _</td></tr>
+              <tr><td>Y</td><td>_ . _ _</td><td>Z</td><td>_ _ . .</td></tr>
+              <tr><td>- (tiret)</td><td>_ . _ . _</td><td>DEL (effacer)</td><td>_ _ _ _ _ _ _ _</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="text-container">
+        <div class="name-display" id="name-display">
+          <p id="name-text">Nom</p>
+          <button class="select-btn" id="change-name">Sélectionner</button>
+        </div>
+        <div class="surname-display" id="surname-display">
+          <p id="surname-text">Prénom</p>
+          <button class="select-btn" id="change-surname">Sélectionner</button>
+        </div>
+      </div>
+    </div>
+    <button class="nav-btn" style="margin-top: 20px;" onclick="window.location.href='phone_number.html'">Etape suivante</button>
+  </div>
+  <script src="js/morse_input.js"></script>
+</body>
+</html>
