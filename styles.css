@@ -1,0 +1,115 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #004C75;
+}
+
+a {
+    text-decoration: none;
+    color: #004C75;
+}
+
+header, footer {
+    background-color: #004C75;
+    color: white;
+    padding: 20px 0;
+}
+
+header .logo h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
+.hero {
+    background-color: #00A9D9;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+.cta-button {
+    background-color: #f09d3e;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* Menu Button Styling */
+.menu-button {
+    background-color: #004C75;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    margin: 20px;
+    border-radius: 5px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+}
+
+/* Hot Bar (Menu) Styling */
+nav {
+    /*background-color: #004C75;*/
+    background-color: transparent;
+    position: fixed;
+    top: 30;
+    right: 0; /* Positioned to the right side */
+    width: 250px; /* You can adjust the width of the menu */
+    height: 100%;
+    padding: 10px 0;
+    /*box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);*/
+    transition: right 0.3s ease-in-out;
+    z-index: 5;
+}
+
+nav.hidden {
+    right: -250px; /* Hide menu off-screen to the right */
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: block;
+    margin: 20px 0;
+}
+
+nav ul li a {
+    font-size: 1.2em;
+    color: white;
+}
+
+/* Footer Section */
+footer .footer-links a {
+    margin: 0 15px;
+}
+
+footer .social-media a {
+    margin: 0 10px;
+    font-size: 1.2em;
+}
